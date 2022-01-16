@@ -1,13 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Parisienne&display=swap');
+
+* {
+  list-style: none;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  background-color: #8DE4AF;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  background-color: #5CDB94;
+  padding: 0 0 20px 0;
+  text-align: center;
+  width: 300px;
+  border-radius: 16px;
+  position: relative;
 }
+
+.navbar {
+  background-color: #389583;
+  color: #05396B;
+  padding-bottom: 0.1px;
+  border-radius: 16px 16px 0 0;
+
+}
+
+.navbar h1 {
+  font-family: 'Monoton', cursive;
+  margin-bottom: -20px;
+}
+
+.authorInp ,
+.titleInp {
+  width: 80px;
+  outline: none;
+  border-radius: 16px;
+  border: 1px solid #05396B;
+  font-size: 0.8rem;
+  transition: 0.2s ease;
+  background-color: transparent;
+  text-align: center;
+  color: #05396B;
+}
+
+.authorInp:hover,
+.titleInp:hover {
+  width: 100px;
+}
+
+.authorInp:focus,
+.titleInp:focus {
+  background-color: #CCD3BE;
+  
+}
+
+.flexy {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.empty {
+  margin-top: 10px;
+  color: rgb(237,245,224);
+  font-family: 'Parisienne', cursive;
+}
+
+.flexli {
+  display: flex;
+  justify-content: center;
+  margin-left: -50px;
+}
+
+.book-list {
+  color: #EDF5E0;
+}
+
+.author {
+  margin-left: 20px;
+  position: relative;
+}
+
+.author::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  left: -15px;
+  background-color: #05396B;
+  top: 40%;
+
+}
+
+.flexli:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+  color:#05396B;
+}
+
+
+.submit {
+  width: 86px;
+  height: 21.2px;
+  font-size: 10px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+
+ }
+ 
+ .submit:hover {
+  box-shadow: inset 0 0 0 4px #ef476f, 
+               inset 0 0 0 8px #ffd166, 
+               inset 0 0 0 12px #06d6a0,
+               inset 0 0 0 16px #118ab2;
+  background: #073b4c;
+  color: #fff;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
